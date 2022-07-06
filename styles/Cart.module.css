@@ -99,19 +99,34 @@
   }
 
   .price::before {
-    content: 'Price: ';
+    content: "Price: ";
     font-weight: 500;
   }
   .quantity::before {
-    content: 'Quantity: ';
+    content: "Quantity: ";
     font-weight: 500;
   }
   .total::before {
-    content: 'Total: ';
+    content: "Total: ";
     font-weight: 500;
   }
 
   .wrapper {
     width: 100%;
   }
+}
+
+.paymentMethods {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.payButton {
+  padding: 10px 5px;
+  cursor: pointer;
+  margin-bottom: 5px;
+  background-color: white;
+  color: teal;
+  font-weight: bold;
 }

@@ -9,11 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@paypal/react-paypal-js": "^7.8.1",
+    "@reduxjs/toolkit": "^1.8.2",
     "axios": "^0.27.2",
+    "eslint-plugin-react-hooks": "^4.7.0-next-c1f5884ff-20220705",
     "mongoose": "^6.4.0",
     "next": "12.1.6",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-redux": "^8.0.2",
+    "redux": "^4.2.0"
   },
   "devDependencies": {
     "eslint": "8.18.0",
