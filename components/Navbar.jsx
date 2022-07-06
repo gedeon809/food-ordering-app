@@ -2,6 +2,7 @@ import styles from '../styles/Navbar.module.css';
 import Image from 'next/image';
 import { useSelector } from 'react-redux';
 import Link from 'next/link';
+import ProductCard from './ProductCard';
 
 const Navbar = () => {
   const quantity = useSelector((state) => state.cart.quantity);
@@ -22,7 +23,9 @@ const Navbar = () => {
           <Link href="/" passHref>
             <li className={styles.listItem}>Homepage</li>
           </Link>
-          <li className={styles.listItem}>Products</li>
+          <Link href="#product" passHref>
+            <li className={styles.listItem}>Products</li>
+          </Link>
           <li className={styles.listItem}>Menu</li>
           <Image src="/img/gdlogo.png" alt="" width="160px" height="69px" />
           <li className={styles.listItem}>Events</li>
