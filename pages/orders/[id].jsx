@@ -23,7 +23,7 @@ const Order = ({ order }) => {
             </tr>
             <tr className={styles.tr}>
               <td>
-                <span className={styles.id}>{order._id}</span>
+                <span className={styles.id}>{order._id.slice(0, 8)}</span>
               </td>
               <td>
                 <span className={styles.name}>{order.customer}</span>
